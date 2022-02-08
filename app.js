@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
-import { getPokedex } from "./fetch.js";
-import { renderPokemon } from "./utils.js";
+import { getPokedex } from './fetch.js';
+import { renderPokemon } from './utils.js';
 
 const pokemonContainer = document.getElementById('pokemon-container');
 
