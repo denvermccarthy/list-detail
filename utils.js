@@ -11,3 +11,7 @@ export function renderPokemon(pokemon){
     a.append(div);
     return a;
 }
+
+export function findById(id, data) {
+    return data.find((item) => item.pokemon === id);
+}
