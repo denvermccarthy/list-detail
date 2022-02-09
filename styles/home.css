@@ -1,1 +1,54 @@
 /* add home page styles here */
+body, html {
+    font-family: 'Press Start 2P';
+}
+
+body {
+    /* background-image: url(../assets/pokemon-bg.jpg); */
+    background-image: linear-gradient(#f0ff01,#ffc34e,#ff0000, #ffc34e, #f0ff01);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 400%;
+    animation: change-position 1s infinite alternate;
+}
+
+@keyframes change-position {
+    0% {
+        background-position: top;
+    }
+    100% {
+        background-position: bottom;
+    }
+}
+
+#pokemon-container{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10vw;
+    column-gap: 10vw;
+    flex-wrap: wrap;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+ }
+
+.select-card img {
+width: 20vw;
+height: auto;
+}
+
+.select-name {
+}
+
+.select-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
