@@ -20,6 +20,7 @@ export function makeCard(pokemon) {
     type.textContent = 'TYPE: ' + pokemon.type_1.toUpperCase();
     img.src = pokemon.url_image;
     a.href = pokemon.pokedex;
+    a.setAttribute('target', '_blank');
 
     div.append(name, hp, attack, defense, type, img);
     a.append(div);
