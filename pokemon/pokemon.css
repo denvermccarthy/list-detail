@@ -11,9 +11,27 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    row-gap: 3em;
     align-items: center;
 }
 
+#home{
+    display: flex;
+    align-self: flex-start;
+    margin-top: 1em;
+    margin-left: 1em;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#home:hover{
+    color: red;
+    background-color: white;
+}
 #pokemon-card img {
     background-image: url(../assets/pokemonimg-bg.jpg);
     background-size: cover;
@@ -30,6 +48,7 @@ border: 10px solid yellow;
 border-radius: 10px;
 width: 25vw;
 height: auto;
+background-color: orange;
 }
 
 a {
@@ -41,6 +60,7 @@ a {
     font-size: .9em;
     grid-area: NAME;
     place-self: center stretch;
+    justify-self: center;
 
 }
 .hp {

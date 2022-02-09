@@ -2,7 +2,6 @@ export function makeCard(pokemon) {
     const div = document.createElement('div');
     div.classList.add('card');
     const name = document.createElement('h3');
-    div.classList.add('card-name');
     const hp = document.createElement('p');
     hp.classList.add('hp');
     const attack = document.createElement('p');
